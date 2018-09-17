@@ -31,7 +31,7 @@ body {
 .section > .btn-wrapper {
   padding: 20px 30px;
   display: block;
-  border: 3px solid #69E781;
+  border: 2px solid #69E781;
   max-width: 100px;
   margin: 10px 0;
   color: #69E781;
@@ -40,13 +40,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
-.section > .btn-wrapper:hover{
-  transform: translateX(10px);
-  transition: 300ms ease-in-out;
-  cursor: pointer;
-  border: 3px solid white;
-  color: white;
-}
+
 .aside {
   grid-area: aside;
   padding: 40px 20px;
