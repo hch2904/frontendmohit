@@ -1,0 +1,81 @@
+@import url("/src/public/css/normalize.css");
+
+body {
+  background: url("../assets/pattern-1.png");
+  background-color: #0e2a47;
+  min-height: 100%;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "section section aside aside aside aside"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+}
+.header {
+  grid-area: header;
+  background: white;
+}
+.header > h1 {
+  grid-column: 1 / span 3;
+  text-align: center;
+  padding: 20px;
+  color: #69E781;
+}
+.section {
+  grid-area: section;
+  padding: 40px;
+  margin: 60px 0;
+}
+.section > .btn-wrapper {
+  padding: 20px 30px;
+  display: block;
+  border: 3px solid #69E781;
+  max-width: 100px;
+  margin: 10px 0;
+  color: #69E781;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.section > .btn-wrapper:hover{
+  transform: translateX(10px);
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  border: 3px solid white;
+  color: white;
+}
+.aside {
+  grid-area: aside;
+  padding: 40px 20px;
+}
+.sub-heading{
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+}
+.aside > h2 {
+  text-align: left;
+}
+.aside > ul {
+  padding: 30px 20px;
+}
+.aside > ul > li {
+  padding: 10px;
+  font-family: "Roboto";
+  color: white;
+}
+.aside > ul > li > p {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: white;
+  margin-top: 15px;
+  padding: 20px;
+  opacity: 0.8;
+}
