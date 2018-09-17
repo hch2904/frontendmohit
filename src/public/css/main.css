@@ -12,6 +12,8 @@ body {
     "section section aside aside aside aside"
     "footer footer footer footer footer footer";
   grid-gap: 10px;
+  max-width: 100%!important;
+  padding: 0!important;
 }
 .header {
   grid-area: header;
@@ -39,8 +41,21 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
+  box-sizing: unset;
 }
+ .section > .btn-wrapper > a {
+   color: #69E781;
+   text-decoration: none;
+   text-transform: none;
+ }
 
+.section > .btn-wrapper:hover {
+  transform: translateX(10px);
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  border: 3px solid white;
+  color: white;
+}
 .aside {
   grid-area: aside;
   padding: 40px 20px;
@@ -72,4 +87,13 @@ body {
   margin-top: 15px;
   padding: 20px;
   opacity: 0.8;
+}
+.carousel-container{
+  padding: 40px;
+}
+.img-car{ 
+  max-width: 600px;
+  max-height: 550px;
+  margin: 0 auto;
+  text-align: center;
 }

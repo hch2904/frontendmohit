@@ -1,0 +1,22 @@
+.para-content{
+    margin: 0;
+    padding: 0;
+    color: white;
+    word-break: break-all;
+    font-family: 'Roboto';
+    text-align: justify;
+}
+.gallery-aside {
+    padding: 10px!important;
+    /* grid-auto-flow: column; */
+}
+.img-container { 
+    grid-area: aside;
+    grid-column: 1 / 5;
+}
+.img-container > img{
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border: 2px solid white;
+}
